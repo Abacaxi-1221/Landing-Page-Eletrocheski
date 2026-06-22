@@ -27,7 +27,7 @@ O site é composto por **4 páginas distintas**, com navegação entre elas:
 
 ### Organização dos arquivos
 ```
-avaliacao2-Fabio/
+Landing-Page-Eletrocheski/
 ├── index.html          # Página inicial
 ├── sobre.html          # Página Sobre
 ├── servicos.html       # Página de Serviços
@@ -47,27 +47,27 @@ avaliacao2-Fabio/
 - **Sombra dinâmica no cabeçalho** — aparece ao rolar a página (evento `scroll`)
 - **Botão "voltar ao topo"** — surge ao rolar e leva ao topo com rolagem suave
 - **Acordeão** — exibe missão, visão e valores expansíveis (página Sobre)
-- **Contadores animados** — números das estatísticas animam ao entrar na tela
-  (usando `IntersectionObserver` e `requestAnimationFrame`)
+- **Contadores animados** — números das estatísticas aumentam de 0 até o
+  valor final quando aparecem na tela (usando `setInterval`)
 - **Animação de revelação** — elementos surgem suavemente ao rolar a página
 - **Ano automático no rodapé** — atualizado via JavaScript
 
 ### Formulário de contato (validação e mensagem de sucesso)
-- Validação dos campos **nome, e-mail, telefone, assunto e mensagem**
-- Validação **em tempo real** (ao sair do campo e ao corrigir)
+- Validação dos campos **nome, e-mail, telefone, assunto e mensagem** ao
+  enviar o formulário (evento `submit`)
 - Mensagens de erro específicas para cada campo
 - **Validação de e-mail** por expressão regular (regex)
 - **Validação de telefone** (10 ou 11 dígitos)
-- **Mensagem de sucesso** exibida após o envio, **simulando a gravação dos
-  dados em um banco de dados** (os dados são montados em um objeto e exibidos
-  no console; o botão mostra o estado "Enviando...")
+- **Mensagem de sucesso** exibida após o envio, **simulando o envio dos dados
+  para um banco de dados**, e o formulário é limpo em seguida
 
 ## Integrantes
-- **Fábio** (individual)
+- **Fabio** (individual)
 
-## Link para acesso (GitHub Pages)
-> *Adicionar aqui o link após publicar:*
-> `https://SEU-USUARIO.github.io/avaliacao2-Fabio/`
+## Links de acesso
+- **Youtube:** https://youtu.be/CMohE5fR6wk
+- **Repositório:** https://github.com/Abacaxi-1221/Landing-Page-Eletrocheski
+- **GitHub Pages:** https://abacaxi-1221.github.io/Landing-Page-Eletrocheski/
 
 ## Como executar localmente
 1. Faça o download ou clone o repositório.

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com a Eletrocheski. Solicite orçamentos para instalação e manutenção de redes elétricas e postes." />
+  <title>Contato — Eletrocheski</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!--Cabeçalho-->
+  <header class="cabecalho">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        </span> Eletrocheski
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__lista">
+        <li class="nav__item"><a href="index.html" class="nav__link">Início</a></li>
+        <li class="nav__item"><a href="sobre.html" class="nav__link">Sobre</a></li>
+        <li class="nav__item"><a href="servicos.html" class="nav__link">Serviços</a></li>
+        <li class="nav__item"><a href="contato.html" class="nav__link nav__link--ativo">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--Banner-->
+    <section class="banner-pagina">
+      <div class="container">
+        <h1>Fale Conosco</h1>
+        <p>Estamos prontos para atender sua empresa. Envie sua mensagem!</p>
+      </div>
+    </section>
+
+    <!--Contato-->
+    <section class="secao">
+      <div class="container contato-grid">
+        <!-- Informações de contato -->
+        <div class="info-contato revelar">
+          <h3>Informações de contato</h3>
+          <p style="color:var(--cinza-texto); margin-bottom:1.5rem;">
+            Entre em contato pelos canais abaixo ou preencha o formulário.
+          </p>
+
+          <div class="info-contato__item">
+            <div>
+              <strong>Telefone</strong>
+              <span>(41) 98881-0102</span>
+            </div>
+          </div>
+          <div class="info-contato__item">
+            <div>
+              <strong>E-mail</strong>
+              <span>contato@eletrocheski.com.br</span>
+            </div>
+          </div>
+          <div class="info-contato__item">
+            <div>
+              <strong>Endereço</strong>
+              <span>Paraná, Brasil</span>
+            </div>
+          </div>
+          <div class="info-contato__item">
+            <div>
+              <strong>Horário</strong>
+              <span>Seg. a Sex. — 8h às 18h<br />Emergências: 24h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <form class="formulario" id="form-contato" novalidate>
+          <h3 style="margin-bottom:1.3rem;">Envie sua mensagem</h3>
+
+          <!-- Mensagem de sucesso -->
+          <div class="mensagem-sucesso" id="mensagem-sucesso" role="alert"></div>
+
+          <div class="campo">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+            <span class="campo__erro"></span>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
+            <span class="campo__erro"></span>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone *</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+            <span class="campo__erro"></span>
+          </div>
+
+          <div class="campo">
+            <label for="assunto">Assunto *</label>
+            <select id="assunto" name="assunto">
+              <option value="">Selecione um assunto</option>
+              <option value="orcamento">Solicitar orçamento</option>
+              <option value="manutencao">Manutenção de rede</option>
+              <option value="instalacao">Instalação de postes</option>
+              <option value="emergencia">Atendimento emergencial</option>
+              <option value="outro">Outro</option>
+            </select>
+            <span class="campo__erro"></span>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Descreva sua necessidade..."></textarea>
+            <span class="campo__erro"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primario" style="width:100%;">
+            Enviar mensagem
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--Rodapé-->
+  <footer class="rodape">
+    <div class="container rodape__grid">
+      <div>
+        <p class="rodape__logo">Eletrocheski</p>
+        <p>Instalação e manutenção de postes e redes elétricas para empresas, com segurança e qualidade.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul class="rodape__lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul class="rodape__lista">
+          <li>Telefone: (42) 99999-0000</li>
+          <li>E-mail: contato@eletrocheski.com.br</li>
+          <li>Endereço: Paraná, Brasil</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container rodape__base">
+      <p>&copy; <span id="ano-atual">2026</span> Eletrocheski. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="voltar-topo" aria-label="Voltar ao topo">&uarr;</button>
+  <script src="js/main.js"></script>
+  <script src="js/contato.js"></script>
+</body>
+</html>
